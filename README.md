@@ -5,4 +5,8 @@ Abhängig von der .cvs-Bibliothek [LINQ to CSV](http://www.aspnetperformance.com
 
 Dynamische Bibliothek von "LINQ to CSV" (LINQtoCSV.dll) muss sich im selben Verzeichnis wie das Programm befinden.
 
+Das Programm erwartet einen Aufrufparameter um den Stundenlohn festzulegen. Wird kein Aufrufparameter übergeben, wird von einem Stundenlohn von 10€ ausgegangen.
+Der Stundenlohn kann dynamisch über das Kontextmenu des Icons in der Taskleiste angepasst werden.
+Bei Klicken auf das Icon wird die aktuelle Berechnung ausgegeben.
+
 Veröffentlicht unter der [MIT-Lizenz](./LICENSE)
