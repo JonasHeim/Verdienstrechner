@@ -1,0 +1,9 @@
+C:\Projekte\Arbeitszeit\Arbeitszeit\Arbeitszeit\bin\Release\Arbeitszeit.exe
+C:\Projekte\Arbeitszeit\Arbeitszeit\Arbeitszeit\obj\Release\Arbeitszeit.NotificationIcon.resources
+C:\Projekte\Arbeitszeit\Arbeitszeit\Arbeitszeit\obj\Release\Arbeitszeit.csproj.GenerateResource.Cache
+C:\Projekte\Arbeitszeit\Arbeitszeit\Arbeitszeit\obj\Release\Arbeitszeit.exe
+C:\Projekte\Arbeitszeit\Arbeitszeit\Arbeitszeit\obj\Release\Arbeitszeit.About.resources
+C:\Projekte\Arbeitszeit\Arbeitszeit\Arbeitszeit\obj\Release\Arbeitszeit.Einstellungen.resources
+C:\Projekte\Arbeitszeit\Arbeitszeit\Arbeitszeit\obj\Release\Arbeitszeit.csprojResolveAssemblyReference.cache
+C:\Projekte\Arbeitszeit\Arbeitszeit\Arbeitszeit\obj\Release\Arbeitszeit.Resources.resources
+C:\Projekte\Arbeitszeit\Arbeitszeit\Arbeitszeit\bin\Release\LINQtoCSV.dll
