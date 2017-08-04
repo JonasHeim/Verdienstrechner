@@ -15,7 +15,6 @@ using System.IO;
 using LINQtoCSV;
 using System.Collections.Generic;
 
-
 namespace Arbeitszeit
 {
 	public class NotificationIcon
@@ -166,7 +165,7 @@ namespace Arbeitszeit
 					
 						//Eintrag erzeugen
 						//get Boot time
-						heutiger_eintrag.BootTime = DateTime.Now - TimeSpan.FromMilliseconds(DateTime.Now.Ticks);
+						heutiger_eintrag.BootTime = DateTime.Now.Subtract(TimeSpan.FromMilliseconds(System.Environment.TickCount));
 						heutiger_eintrag.ShutdownTime = DateTime.Now;
 						heutiger_eintrag.PresenceTime = DateTime.Now - heutiger_eintrag.BootTime;
 					
@@ -179,8 +178,9 @@ namespace Arbeitszeit
 				
 					//initialize and start timer to call updateCSV() every minute
 					update_timer = new System.Threading.Timer(e => updateCSV(), null, TimeSpan.Zero, TimeSpan.FromMinutes(1));
-				} catch (Exception) {
+				} catch (Exception e) {
 					System.Diagnostics.Debug.WriteLine("Catched Exception reading log file and add the entries to the list.");
+					System.Diagnostics.Debug.WriteLine(e.StackTrace);
 					MessageBox.Show("Fehler beim Zugriff auf die Logdatei!\nBitte Zugriffrechte und Pfade prüfen.", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					return;
 				}
@@ -306,8 +306,11 @@ namespace Arbeitszeit
 							
 				
 				}
-			} catch (Exception) {
-				
+			} catch (Exception e) {
+				System.Diagnostics.Debug.WriteLine("Catched Exception reading log file and add the entries to the list.");
+				System.Diagnostics.Debug.WriteLine(e.StackTrace);
+				MessageBox.Show("Fehler beim Zugriff auf die Logdatei!\nBitte Zugriffrechte und Pfade prüfen.", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
 
 			}
 			
